@@ -1,0 +1,230 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+/* 檔案名稱前「_」不會再匯出一份css檔案 */
+/* CSS重製,Eric Meyer 的版本 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+/* 重置所有標籤 */
+* {
+  box-sizing: border-box;
+}
+
+/* 重置字體 */
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+/* 重置標題字重 */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+/* 重置列表 */
+ul, ol {
+  list-style: none;
+}
+
+/* 重圖片 */
+img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.LT-bg-navbar-1 {
+  border: 1px;
+  margin: 0 50px;
+}
+@media (max-width: 1024px) {
+  .LT-bg-navbar-1 {
+    display: flex;
+    margin: 0px;
+    flex-direction: column;
+  }
+}
+@media (max-width: 640px) {
+  .LT-bg-navbar-1 {
+    display: flex;
+  }
+}
+.LT-bg-navbar-1 .LT-bg-alltop .LT-bk-all .text-1 {
+  position: relative;
+  height: 90vh;
+  width: 75vw;
+  border-radius: 15px;
+  overflow: hidden;
+}
+@media (max-width: 1024px) {
+  .LT-bg-navbar-1 .LT-bg-alltop .LT-bk-all .text-1 {
+    width: 100vw;
+    height: 88vh;
+  }
+}
+@media (max-width: 640px) {
+  .LT-bg-navbar-1 .LT-bg-alltop .LT-bk-all .text-1 {
+    width: 100%;
+    height: 250px;
+    margin-top: 15px;
+    object-fit: contain;
+  }
+}
+.LT-bg-navbar-1 .LT-bg-alltop .LT-bk-all .text-1 #banner {
+  height: 100%;
+}
+.LT-bg-navbar-1 .LT-bg-alltop .LT-bk-all .text-1 #banner .content-slider {
+  width: 100%;
+  height: 100%;
+}
+.LT-bg-navbar-1 .LT-bg-alltop .LT-bk-all .text-1 #banner .content-slider input {
+  display: none;
+}
+.LT-bg-navbar-1 .LT-bg-alltop .LT-bk-all .text-1 #banner .content-slider .slider {
+  position: relative;
+  height: 100%;
+}
+.LT-bg-navbar-1 .LT-bg-alltop .LT-bk-all .text-1 #banner .content-slider .slider .banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 0;
+  height: 100%;
+}
+.LT-bg-navbar-1 .LT-bg-alltop .LT-bk-all .text-1 #banner .content-slider .slider .banner .banner-inner-wrapper .learn-more-button {
+  padding-bottom: 5em;
+  z-index: 15 !important;
+}
+.LT-bg-navbar-1 .LT-bg-alltop .LT-bk-all .text-1 #banner .content-slider .slider .banner .banner-inner-wrapper .learn-more-button a:hover {
+  border-color: #D4AF37;
+  transition: 0.3s;
+}
+.LT-bg-navbar-1 .LT-bg-alltop .LT-bk-all .text-1 #banner .content-slider .slider #top-banner-1,
+.LT-bg-navbar-1 .LT-bg-alltop .LT-bk-all .text-1 #banner .content-slider .slider #top-banner-2,
+.LT-bg-navbar-1 .LT-bg-alltop .LT-bk-all .text-1 #banner .content-slider .slider #top-banner-3 {
+  object-fit: cover;
+}
+.LT-bg-navbar-1 .LT-bg-alltop .LT-bk-all .text-1 #banner .content-slider .slider #top-banner-1 img,
+.LT-bg-navbar-1 .LT-bg-alltop .LT-bk-all .text-1 #banner .content-slider .slider #top-banner-2 img,
+.LT-bg-navbar-1 .LT-bg-alltop .LT-bk-all .text-1 #banner .content-slider .slider #top-banner-3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.LT-bg-navbar-1 .LT-bg-alltop .LT-bk-all .text-1 #banner .content-slider nav {
+  position: absolute;
+  bottom: 0.5em;
+  width: 100%;
+  z-index: 10;
+}
+.LT-bg-navbar-1 .LT-bg-alltop .LT-bk-all .text-1 #banner .content-slider nav .controls {
+  display: flex;
+}
+.LT-bg-navbar-1 .LT-bg-alltop .LT-bk-all .text-1 #banner .content-slider nav .controls label {
+  position: relative;
+  display: inline-block;
+  flex: 1;
+  height: 3.1em;
+  overflow: hidden;
+  margin: 0 1em;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.LT-bg-navbar-1 .LT-bg-alltop .LT-bk-all .text-1 #banner .content-slider nav .controls label:hover {
+  color: #DAA520;
+}
+.LT-bg-navbar-1 .LT-bg-alltop .LT-bk-all .text-1 #banner .content-slider nav .controls label .progressbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: #DAA520;
+  z-index: 999;
+}
+@media (max-width: 640px) {
+  .LT-bg-navbar-1 .LT-bg-alltop .LT-bk-all .text-1 #banner .content-slider nav .controls label .progressbar {
+    top: 25px;
+  }
+}
+.LT-bg-navbar-1 .LT-bg-alltop .LT-bk-all .text-1 #banner .content-slider nav .controls label .progressbar .progressbar-fill {
+  position: inherit;
+  width: inherit;
+  height: inherit;
+  margin-left: -100%;
+  background: #DAA520;
+}
+.LT-bg-navbar-1 .LT-bg-alltop .LT-bk-all .text-1 #banner .content-slider #banner1:checked ~ .slider #top-banner-1 {
+  opacity: 1;
+  z-index: 1;
+}
+.LT-bg-navbar-1 .LT-bg-alltop .LT-bk-all .text-1 #banner .content-slider #banner1:checked ~ nav label:nth-of-type(1) {
+  cursor: default;
+  color: #fff;
+  transition: all 0.5s;
+}
+.LT-bg-navbar-1 .LT-bg-alltop .LT-bk-all .text-1 #banner .content-slider #banner1:checked ~ nav label:nth-of-type(1) .progressbar {
+  background: #fff;
+}
+.LT-bg-navbar-1 .LT-bg-alltop .LT-bk-all .text-1 #banner .content-slider #banner1:checked ~ nav label:nth-of-type(1) .progressbar .progressbar-fill {
+  animation: progressBarFill 5s linear;
+}
+.LT-bg-navbar-1 .LT-bg-alltop .LT-bk-all .text-1 #banner .content-slider #banner2:checked ~ .slider #top-banner-2 {
+  opacity: 1;
+  z-index: 1;
+}
+.LT-bg-navbar-1 .LT-bg-alltop .LT-bk-all .text-1 #banner .content-slider #banner2:checked ~ nav label:nth-of-type(2) {
+  cursor: default;
+  color: #fff;
+  transition: all 0.5s;
+}
+.LT-bg-navbar-1 .LT-bg-alltop .LT-bk-all .text-1 #banner .content-slider #banner2:checked ~ nav label:nth-of-type(2) .progressbar {
+  background: #fff;
+}
+.LT-bg-navbar-1 .LT-bg-alltop .LT-bk-all .text-1 #banner .content-slider #banner2:checked ~ nav label:nth-of-type(2) .progressbar .progressbar-fill {
+  animation: progressBarFill 5s linear;
+}
+.LT-bg-navbar-1 .LT-bg-alltop .LT-bk-all .text-1 #banner .content-slider #banner3:checked ~ .slider #top-banner-3 {
+  opacity: 1;
+  z-index: 1;
+}
+.LT-bg-navbar-1 .LT-bg-alltop .LT-bk-all .text-1 #banner .content-slider #banner3:checked ~ nav label:nth-of-type(3) {
+  cursor: default;
+  color: #fff;
+  transition: all 0.5s;
+}
+.LT-bg-navbar-1 .LT-bg-alltop .LT-bk-all .text-1 #banner .content-slider #banner3:checked ~ nav label:nth-of-type(3) .progressbar {
+  background: #fff;
+}
+.LT-bg-navbar-1 .LT-bg-alltop .LT-bk-all .text-1 #banner .content-slider #banner3:checked ~ nav label:nth-of-type(3) .progressbar .progressbar-fill {
+  animation: progressBarFill 5s linear;
+}
+@keyframes progressBarFill {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0;
+  }
+}/*# sourceMappingURL=BannerSlider.css.map */

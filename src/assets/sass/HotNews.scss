@@ -1,0 +1,87 @@
+@use 'reset';
+@use './variables/'as *;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+
+.HotNews-hotnote {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 45vh;
+
+    @media (max-width:640px) {
+        height: 100%;
+    }
+
+    >a {
+        position: relative;
+        width: calc(40%);
+        height: 20vh;
+        margin-right: 30px;
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        border-color: none;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        box-shadow: 14px 14px 4px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        transition: transform 0.3s ease;
+
+        @media (max-width:640px) {
+            width: 100%;
+            margin-top: 15px;
+
+            &:nth-child(n+3) {
+                display: none;
+            }
+        }
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.085), rgba(0, 0, 0, 0.183));
+        }
+    }
+
+    p {
+        position: relative;
+        color: #fff;
+        font-size: 24px;
+        font-weight: bold;
+        padding: 12px;
+        margin: 0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+        @media (max-width:640px) {
+            font-size: 20px;
+        }
+    }
+
+    .HotNews-hotnote-1 {
+        background-image: url(../images/gamenews-img-big.png);
+    }
+
+    .HotNews-hotnote-2 {
+        background-image: url(../images/gamenote-img-4.png);
+    }
+
+    .HotNews-hotnote-3 {
+        background-image: url(../images/gamenews-img-2.webp);
+    }
+
+    .HotNews-hotnote-4 {
+        background-image: url(../images/gamenote-img-big.png);
+    }
+}

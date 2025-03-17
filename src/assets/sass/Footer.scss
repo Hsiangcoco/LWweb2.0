@@ -1,0 +1,53 @@
+@use 'reset';
+@use './variables/'as *;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+
+.LT-footer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    .LT-footer-bg-1 {
+        margin-right: 80px;
+        text-align: center;
+
+        @media (max-width:640px) {
+            margin: 15px;
+        }
+
+        .LT-footer-titletop {
+            p {
+                color: #8B4513;
+                font-size: 1.5rem;
+                font-weight: 700;
+                padding-top: 10px;
+
+                @media (max-width:640px) {
+                    white-space: nowrap;
+                }
+            }
+
+            .LT-footer-content {
+
+                padding-top: 5px;
+
+                a {
+
+                    color: #000000;
+                    font-size: 1.2rem;
+
+
+                }
+            }
+        }
+    }
+
+    .Footertext {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        @media (max-width:640px) {
+            font-size: 0.8rem;
+        }
+    }
+}
