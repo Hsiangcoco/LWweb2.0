@@ -1,0 +1,140 @@
+@use 'reset';
+@use './variables/'as *;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+
+.update-log {
+    display: flex;
+    flex-direction: column;
+    background-color: $background-color; // 主背景色
+    border-radius: 10px; // 圓角
+    padding: 20px;
+    color: $text-color; // 文字顏色
+    border: 2px solid $color-secondary; // 邊框色
+
+    @media (max-width:640px) {
+        margin: 15px;
+    }
+
+
+    // 標題區塊
+    .log-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            color: $text-color;
+
+        }
+
+        .view-all {
+            color: $text-color;
+            font-size: 14px;
+            text-decoration: none;
+
+            &:hover {
+                color: $link-hover-color; // 懸停時顏色改變
+            }
+        }
+    }
+
+    // 日誌內容區
+    .log-content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @media (max-width:1024px) {
+            display: flex;
+            flex-direction: unset;
+        }
+
+        @media (max-width:640px) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .log-item {
+            margin-bottom: 15px;
+            ;
+
+
+            a {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                background-color: $item-background; // 條目背景色
+                border-radius: 10px;
+                border: 1px solid $border-color; // 添加邊框
+                padding: 15px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // 淡淡的陰影效果
+                transition: all 0.2s ease;
+
+                &:hover {
+                    transform: translateX(5px);
+                    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                }
+            }
+
+
+            @media (max-width:1024px) {
+                display: flex;
+                flex-direction: unset;
+                margin-top: 15px;
+
+                &:nth-child(n+4) {
+                    display: none;
+                }
+            }
+
+            @media (max-width:640px) {
+                display: flex;
+                flex-direction: column;
+            }
+
+
+            // 日期區塊
+            .log-date {
+                font-size: 16px;
+                color: $text-color; // 日期顏色
+                width: 60px; // 固定寬度
+                flex-shrink: 0; // 防止壓縮
+
+                @media (max-width:1440px) {
+                    width: 30px;
+                }
+            }
+
+            // 詳細內容區塊
+            .log-details {
+                margin-left: 15px; // 與日期分開
+
+
+                h2 {
+                    display: inline-block;
+                    /* 或 inline-block */
+                    font-size: 18px;
+                    font-weight: bold;
+                    margin: 0 0 5px 0; // 與段落的間距
+                    color: $text-color; // 標題文字顏色
+                    white-space: nowrap;
+                    /* 必須禁用換行 */
+                    text-overflow: ellipsis;
+
+                }
+
+                p {
+                    font-size: 14px;
+                    color: $text-color; // 描述文字顏色
+                    margin: 0;
+
+                }
+            }
+        }
+    }
+}

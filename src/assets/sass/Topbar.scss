@@ -1,0 +1,319 @@
+@use 'reset';
+@use './variables/'as *;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+
+.LT-Topbar-page {
+    #LT-header {
+        .LT-Topbar {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 100%;
+            @media (max-width:1024px) {
+                display: block;
+            }
+            .LT-title {
+                display: flex;
+                position: relative;
+                align-items: center;
+                font-size: 24px; // LOGO 字體大小
+                margin: 0 30px 0px 60px; // 與左側距離
+                color: #5A4636; // 深棕色字體，與背景形成良好對比
+                font-weight: 600; // 加粗字體，突顯 LOGO
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); // 添加立體感的陰影
+                font-family: "Noto Sans TC", serif;
+                letter-spacing: 1px; // 增加字母間距，提升辨識度
+                text-transform: uppercase; // 全部大寫，增加品牌感
+
+                @media (max-width:1024px) {
+                    margin: 0 30px 0 15px;
+                }
+
+                @media (max-width:640px) {
+                    margin: 0 30px 0 15px;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: -10px;
+                    transform: translateY(-50%);
+                    width: 10px;
+                    height: 40px;
+                    background-color: #DAA520; // 金黃色裝飾色
+                    border-radius: 5px;
+                    margin-right: 10px;
+                }
+
+                .logoimg {
+                    height: 90px;
+                    width: 100px;
+                    margin: 0 -20px;
+
+                    @media (max-width:1024px) {
+                        height: 45px;
+                    }
+
+                    @media (max-width:640px) {
+                        height: 45px;
+                        width: 100px;
+                    }
+
+
+                }
+            }
+
+            .LT-Navbar {
+                color: $text-color; // 主文字色
+                display: flex;
+                justify-content: flex-start;
+                font-weight: 500;
+                margin-right: 50px;
+
+                @media (max-width:640px) {
+                    display: none;
+                }
+
+                a {
+                    p {
+                        margin: 15px;
+                        padding: 5px 10px;
+                        border: 1px solid $border-color; // 邊框色
+                        background-color: $highlight-color; // 背景色
+                        border-radius: 10px;
+                        box-shadow: 2px 2px $shadow-color; // 陰影
+                        color: $text-color; // 文字色
+
+                        @media (max-width:1024px) {
+                            margin: 15px 30px 15px 0;
+                        }
+
+                        &:hover {
+                            background-color: $color-secondary-1; // 懸停背景色
+                            color: $color-secondary; // 懸停文字色
+                            box-shadow: 2px 2px rgba(0, 0, 0, 0.2); // 輕微陰影
+                        }
+                    }
+                }
+            }
+            .LT-announcement {
+                display: flex;
+                margin-right: 50px;
+                padding: 5px 0;
+                background-color: $color-secondary-1; // 背景色
+                width: 30%;
+                border: 2px solid $color-secondary; // 邊框色
+                border-radius: 5px;
+                overflow: hidden;
+
+                @media (max-width:1024px) {
+                    width: 100%;
+                }
+
+                @media (max-width:640px) {
+                    margin: 15px 0 0 0;
+                }
+
+                .LT-announcement-1 {
+                    display: flex;
+                    align-items: center;
+                    margin: 0 15px;
+
+                    @media (max-width:640px) {
+                        margin: 0 10px;
+                    }
+
+                    p {
+                        font-size: $font-size-xs; // 小字體大小
+                        color: #D35D47; // 錯誤文字顏色
+                        font-weight: bold;
+                        font-size: 14px;
+                        white-space: nowrap;
+                        /* 禁止文字換行 */
+
+                    }
+                }
+
+                .LT-announcement-scroll {
+                    white-space: nowrap;
+                    /* 禁止文字換行 */
+                    overflow: hidden;
+                    /* 超出容器部分隱藏 */
+                    text-overflow: ellipsis;
+                    /* 用省略號表示被截斷的文字 */
+                    height: 25px;
+                    position: relative;
+
+
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                        transition: transform 0.8s ease-in-out; // 平滑過渡
+                        position: relative;
+
+                        li {
+                            height: 25px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            font-size: 16px;
+                            white-space: nowrap;
+                            /* 禁止文字換行 */
+                            overflow: hidden;
+                            /* 超出容器部分隱藏 */
+                            text-overflow: ellipsis;
+                            /* 用省略號表示被截斷的文字 */
+
+
+                            a {
+                                text-decoration: none;
+                                color: #333;
+                                font-weight: bold;
+
+                                &:hover {
+                                    color: #0078d4;
+                                }
+                            }
+
+                            &.active {
+                                font-weight: bold; // 活動項目加粗
+                                color: #0056b3;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+//漢堡按鈕
+.LT-navbar-humburger {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @media (max-width:640px) {
+        display: flex;
+        position: absolute;
+        z-index: 99;
+        top: 5px;
+        right: 0px;
+    }
+
+    .LT-navigation {
+        /* 第一階段 */
+        flex-direction: column;
+        align-items: center;
+        background-color: $highlight-color;
+        border-radius: 15px;
+        /* 第三階段 */
+        display: none;
+        /* 第四階段 */
+        animation: hide 0.5s both;
+
+        &.show {
+            display: flex;
+            animation: show 0.5s both;
+        }
+
+        @keyframes show {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* 第四階段 */
+        @keyframes hide {
+            from {
+                opacity: 1;
+                display: flex;
+            }
+
+            /*動態顯示*/
+            to {
+                opacity: 0;
+                display: none;
+            }
+
+            /*動態消失*/
+        }
+
+        .LT-menu {
+            display: flex;
+            flex-direction: column;
+            padding: 20px 30px;
+            border-radius: 15px;
+
+            a {
+                color: $text-color;
+                margin: 20px;
+            }
+        }
+
+        .LT-icon {
+            display: flex;
+            order: 1;
+            padding: 15px;
+
+            a {
+                width: 35px;
+                margin: 0 5px;
+            }
+        }
+
+        a {
+            display: block;
+        }
+    }
+
+    .LT-hamburger {
+        position: sticky;
+        margin-bottom: 10px;
+        /*  修改button預設樣式  */
+        background-color: transparent;
+        border: none;
+
+        &.is-active .LT-bar:nth-child(1) {
+
+            transform: rotate(45deg) translateY(6px) translateX(9px);
+        }
+
+        &.is-active .LT-bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        &.is-active .LT-bar:nth-child(3) {
+
+            transform: rotate(-45deg) translateY(-6px) translateX(10px);
+        }
+
+        .LT-bar {
+            display: block;
+            width: 30px;
+            height: 6px;
+            background-color: $highlight-color;
+            margin: 5px auto;
+            transition: 0.35s;
+            border: 1px solid $border-color;
+        }
+    }
+
+
+}
+
+/* 漢堡按鈕  */
+
+
+/* 第一階段 */
+/* 手機版選單列樣式 */

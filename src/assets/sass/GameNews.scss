@@ -1,0 +1,98 @@
+@use 'reset';
+@use './variables/'as *;
+
+.GN-content-bg {
+    background-color: #FDF5E6;
+    border: 1px solid #8B4513;
+    border-radius: 15px;
+
+    @media (max-width:640px) {
+        margin: 0px;
+    }
+
+    .GN-content-textbox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 50px;
+
+        @media (max-width:640px) {
+            margin: 0px 5px;
+        }
+
+        &:not(:first-child) {
+            border-top: 1px solid #000000cc;
+        }
+
+
+        .GN-content-textbox-1 {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            margin: 24px 0px;
+
+            img {
+                width: 48px;
+            }
+
+            p {
+                color: #000;
+                font-size: 18px;
+
+                @media (max-width:640px) {
+                    font-size: 12px;
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .GN-content-text-1 {
+            border-inline-start: 3px solid #000000cc;
+
+            width: 220px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @media (max-width:1024px) {
+                display: none;
+            }
+        }
+    }
+
+    .load-more-btn {
+        width: 100%;
+        padding: 12px;
+        margin-top: 16px;
+        background-color: rgba(120, 53, 15, 0.1);
+        border: none;
+        border-radius: 8px;
+        color: #78350f;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-size: 16px;
+    }
+
+    .load-more-btn:hover {
+        background-color: rgba(120, 53, 15, 0.2);
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .no-more-data {
+        width: 100%;
+        padding: 12px;
+        margin-top: 16px;
+        background-color: rgba(120, 53, 15, 0.1);
+        border: none;
+        border-radius: 8px;
+        color: #000;
+        text-align: center;
+
+    }
+}

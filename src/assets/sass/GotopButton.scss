@@ -1,0 +1,52 @@
+@use 'reset';
+@use './variables/'as *;
+
+.go-top-button {
+    // 位置設定
+    position: fixed;
+    right: 2rem; // 對應 right-8
+    bottom: 2rem; // 對應 bottom-8
+    z-index: 1000;
+
+    // 基本樣式
+    padding: 0.5rem; // 對應 p-2
+    background-color: $background-color;
+    border-radius: 9999px; // 對應 rounded-full
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05); // 對應 shadow-lg
+    cursor: pointer;
+
+    // 動畫效果
+    transition: all 0.3s ease; // 對應 transition-all duration-300
+
+    // 互動狀態
+    &:hover {
+        background-color: $link-hover-color; // 對應 hover:bg-gray-100
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    // 顯示/隱藏狀態
+    &.visible {
+        opacity: 1;
+        transform: translateY(0); // 對應 opacity-100 translate-y-0
+    }
+
+    &.hidden {
+        opacity: 0;
+        transform: translateY(4rem); // 對應 opacity-0 translate-y-16
+    }
+
+    // 圖標樣式
+    svg {
+        width: 32px;
+        height: 32px;
+        color: #4b5563; // 對應 text-gray-600
+
+        &:hover {
+            color: #1f2937; // 對應 hover:text-gray-800
+        }
+    }
+}

@@ -1,0 +1,185 @@
+@use 'reset';
+@use './variables/'as *;
+
+.about-content-bg {
+
+
+    @media (max-width:640px) {
+        width: 90vw;
+        margin: 20px 3px;
+    }
+
+    .streamer-profile {
+        margin: 40px ;
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+
+        // 頭部區域
+        .profile-header {
+            background: linear-gradient(45deg, $bg-primary);
+            padding: 30px;
+
+            .profile-info {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                .profile-avatar {
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 50%;
+                    border: 4px solid white;
+                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                }
+
+                .profile-details {
+                    flex: 1;
+
+                    .profile-name {
+                        font-size: 24px;
+                        color: $text-primary;
+                        margin-bottom: 5px;
+                    }
+
+                    .profile-stats {
+                        color: $text-secondary;
+                        font-size: 14px;
+                        margin-bottom: 5px;
+                    }
+
+                    .profile-bio {
+                        color: $text-primary;
+                        margin-bottom: 5px;
+                    }
+
+                    .profile-link {
+                        color: $accent-color;
+                        text-decoration: none;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+                .follow-button {
+                    background: $accent-color;
+                    color: white;
+                    border: none;
+                    padding: 10px 25px;
+                    border-radius: 25px;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        background: #D4AF37;
+                        transform: translateY(-2px);
+                    }
+                }
+            }
+        }
+
+        // 主要內容區
+        .profile-content {
+            padding: 30px;
+
+            .about-section {
+                line-height: 1.6;
+                color: $text-primary;
+
+                p {
+                    margin-bottom: 20px;
+                }
+
+                .channel-highlights {
+                    margin: 30px 0;
+
+                    h2 {
+                        color: $text-primary;
+                        font-size: 20px;
+                        margin-bottom: 15px;
+                    }
+
+                    .highlights-list {
+                        list-style: none;
+                        padding: 0;
+
+                        li {
+                            padding: 10px 0;
+                            padding-left: 25px;
+                            position: relative;
+
+                            &::before {
+                                content: '🎮';
+                                position: absolute;
+                                left: 0;
+                            }
+                        }
+                    }
+                }
+
+                .contact-info {
+                    margin: 30px 0;
+                    padding: 15px;
+                    background: #f0Daae;
+                    border-radius: 10px;
+                }
+            }
+
+            // 社群連結
+            .social-links {
+                margin-top: 30px;
+                text-align: center;
+
+                .social-text {
+                    color: $text-secondary;
+                    margin-bottom: 15px;
+                }
+
+                .social-icons {
+                    display: flex;
+                    justify-content: center;
+                    gap: 15px;
+
+                    .social-icon {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        transition: transform 0.3s ease;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        &:hover {
+                            transform: translateY(-3px);
+                        }
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 768px) {
+            margin: 20px;
+
+            .profile-header {
+                .profile-info {
+                    flex-direction: column;
+                    text-align: center;
+
+                    .profile-avatar {
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+            }
+        }
+    }
+
+}

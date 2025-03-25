@@ -1,0 +1,149 @@
+@use 'reset';
+@use './variables/'as *;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+
+.LT-bg-navbar-1 {
+    margin: 0 50px;
+    height: 90vh;
+    width: 75vw;
+
+    @media (max-width:1024px) {
+        display: flex;
+        margin: 0px;
+        flex-direction: column;
+    }
+
+    @media (max-width:640px) {
+        height: auto;
+        width: auto;
+    }
+
+    .LT-bg-alltop {
+        width: 100%;
+        height: 100%;
+
+        .LT-bk-all {
+            width: 100%;
+            height: 100%;
+
+            // 主要樣式
+            .text-1 {
+                position: relative;
+                width: 100%;
+                height: 100%;
+
+                @media (max-width:1024px) {
+                    width: 100vw;
+                    height: 88vh;
+                }
+
+                @media (max-width:640px) {
+                    width: 100%;
+                    height: 250px;
+                    margin-top: 15px;
+                    object-fit: contain;
+                }
+
+                #banner {
+                    border-radius: 15px;
+                    width: 100%;
+                    height: 100%;
+
+                    .content-slider {
+
+                        width: 100%;
+                        height: 100%;
+
+                        .slider {
+                            position: relative;
+                            width: 100%;
+                            height: 100%;
+
+                            .banner {
+                                width: 100%;
+                                height: 100%;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                opacity: 0;
+                                z-index: 0;
+
+                                img {
+                                    border-radius: 15px;
+
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+
+                        }
+
+                        nav {
+                            position: absolute;
+                            bottom: 0.5em;
+                            width: 100%;
+                            z-index: 10;
+
+                            .controls {
+                                display: flex;
+
+                                label {
+                                    position: relative;
+                                    display: inline-block;
+                                    flex: 1;
+                                    height: $nav-height;
+                                    overflow: hidden;
+                                    margin: 0 1em;
+                                    cursor: pointer;
+                                    transition: all 0.3s;
+
+
+                                    .progressbar-fill {
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        height: 3px;
+                                        width: 100%;
+                                        background: #DAA520;
+                                        z-index: 10;
+                                        transition: all 0.3s;
+                                        @media (max-width:640px) {
+top: 35px;
+                                        }
+
+                                        &.active {
+                                            .progressbar-filltop {
+                                                background: #ffffff;
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                height: 3px;
+                                                width: 100%;
+                                                z-index: 11;
+                                                transition: all 0.3s;
+                                                animation: progressBarAnimation 5s linear;
+                                            }
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes progressBarAnimation {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}

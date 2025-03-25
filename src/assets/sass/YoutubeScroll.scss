@@ -1,0 +1,117 @@
+@use 'reset';
+@use './variables/'as *;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+
+
+.LT-guide-videos-section {
+    font-size: 1rem;
+    text-align: center;
+    color: #8B5E34;
+    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+
+    .LT-youtube-bk-all {
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        margin: 0 auto;
+        @media (max-width:1024px) {
+            overflow: auto;
+        }
+
+        .youtubearrow {
+            position: absolute;
+            z-index: 99;
+            width: 58px;
+            height: 80%;
+
+            @media (max-width:1440px) {
+                height: 80%;
+                ;
+            }
+
+            @media (max-width:1024px) {
+                display: none;
+            }
+
+            cursor: pointer;
+            transition: transform 0.3s ease,
+            opacity 0.3s ease ;
+
+            svg {
+                margin-top: 80px;
+                transition: transform 0.3s ease;
+
+                @media (max-width:1024px) {}
+            }
+
+            &:hover {
+                svg {
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+        .youtube-arrow-left {
+            left: 0;
+            background: linear-gradient(to right, #FFF7E0, rgba(255, 255, 255, 0));
+        }
+
+        .youtube-arrow-right {
+            right: 0;
+            background: linear-gradient(to left, #FFF7E0, rgba(255, 255, 255, 0));
+        }
+
+        .youtube-carousel {
+            display: flex;
+            align-items: center;
+            height: 30vh;
+            overflow: hidden;
+            scroll-behavior: smooth;
+            width: calc(100%);
+            /* 箭頭寬度調整 */
+
+            transition: transform 0.8s ease-in-out;
+
+            @media (max-width:640px) {
+                height: 100%;
+            }
+
+
+
+
+            a {
+                flex: 0 0 20%; // 每次顯示 5 個影片
+                text-align: center;
+                margin: 0 10px 0 0;
+
+
+                @media (max-width:1024px) {
+                    flex: 0 0 50%;
+                }
+
+                @media (max-width:640px) {
+                    flex: 0 0 100%;
+                }
+
+                img {
+                    width: 100%;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+
+                    @media (max-width:1440px) {}
+
+                    &:hover {
+                        transform: scale(1.1);
+                        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+                    }
+                }
+            }
+        }
+    }
+}

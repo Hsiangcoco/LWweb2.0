@@ -1,0 +1,89 @@
+@use 'reset';
+@use './variables/'as *;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+.LT-class-ba-all {
+
+    .LT-class-bk-1 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+
+        .classimg {
+            width: 150px;
+            height: 200px;
+            object-fit: cover;
+            object-position: top;
+        }
+
+        .class-1 {
+            border: none;
+            border-radius: 12px;
+            position: relative;
+            overflow: hidden;
+            height: 200px;
+            display: flex;
+            align-items: flex-end;
+            box-shadow: 0 4px 15px rgba(139, 115, 85, 0.15);
+            transition: all 0.3s ease;
+
+
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 20px rgba(139, 115, 85, 0.2);
+
+                .Professiontext {
+                    opacity: 1;
+                    background: rgba(0, 0, 0, 0.5);
+                }
+            }
+
+            a {
+                text-decoration: none;
+
+            }
+
+            .LT-class-textbg-1 {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 56px;
+
+            }
+
+            .Professiontext {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                font-size: 32px;
+                font-weight: bold;
+                opacity: 0;
+                transition: all 0.3s ease;
+                z-index: 1;
+                background: linear-gradient(to bottom,
+                        rgba(74, 59, 36, 0.8),
+                        rgba(74, 59, 36, 0.6));
+                backdrop-filter: blur(2px);
+
+                @media (max-width:1024px) {
+                    background: none;
+                    backdrop-filter: blur(0px);
+                    opacity: 1;
+                }
+            }
+
+        }
+    }
+
+}

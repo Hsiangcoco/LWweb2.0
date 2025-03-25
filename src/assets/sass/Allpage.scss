@@ -1,0 +1,490 @@
+@use 'reset';
+@use './variables/'as *;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+
+//共通區域
+//Topbar
+#All-page-topbar {
+    @media (max-width:1024px) {
+        padding: 5px 5px 15px 5px;
+    }
+
+    @media (max-width:640px) {
+        margin: 0px 5px;
+    }
+}
+
+//標題大字
+.Top-title {
+    position: relative;
+    z-index: 1;
+    border: 1px solid;
+    border-radius: 15px;
+    background-position: -550px center;
+    font-weight: bold;
+    font-family: 'noto sans tc', serif;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 15px;
+
+    img {
+        position: relative;
+        z-index: -2;
+        height: 186px;
+        object-fit: cover;
+        background-size: cover;
+
+        background-position: 0px;
+
+        @media (max-width:640px) {
+            height: 100px;
+        }
+    }
+
+    p {
+        position: absolute;
+        top: 0px;
+        left: 500px;
+        text-align: center;
+        line-height: 180px;
+        font-size: 80px;
+        color: #FFD96E;
+        /* 字間距 */
+        letter-spacing: 30px;
+
+        @media (min-width:1920px) {
+            left: 500px;
+        }
+
+        @media (max-width:1440px) {
+            left: 300px;
+        }
+
+        @media (max-width:1024px) {
+            left: 150px;
+        }
+
+        @media (max-width:640px) {
+            left: 80px;
+            letter-spacing: 15px;
+            font-size: 50px;
+            line-height: 100px;
+        }
+
+    }
+}
+
+//左右分邊
+#All-page-mix {
+    display: flex;
+    margin: 0px 50px;
+
+    .All-page-left {
+        padding-right: 30px;
+
+        @media (max-width:1024px) {
+            padding: 0px;
+        }
+
+        @media (max-width:640px) {
+            padding: 0px;
+        }
+    }
+
+    @media (max-width:1024px) {
+        display: block;
+        margin: 0px 10px;
+    }
+
+    @media (max-width:640px) {
+        display: block;
+        margin: 0px 10px;
+    }
+
+    .HotNews {
+        margin: 15px 0px;
+
+        a {
+            @media (max-width:640px) {
+                margin-right: 0px;
+
+            }
+        }
+    }
+}
+
+//Footer間距
+.All-page-Footer {
+    margin-bottom: 15px;
+}
+
+//個別分頁內容
+//首頁
+#Home-Allpage {
+    .Home-page-1 {
+        .Home-page-1-Banner {
+            display: flex;
+
+            @media (max-width:1024px) {
+                margin-top: 10px;
+                display: block;
+            }
+
+            @media (max-width:640px) {
+                display: block;
+                margin-top: 10px;
+
+            }
+        }
+    }
+
+    .Home-page-2 {
+        margin: 30px 150px;
+        /* 區域上下間距 */
+        padding: 20px;
+        /* 區域內間距 */
+        background-color: #FFF3E6;
+        /* 柔和背景色 */
+        border: 2px solid #D3A871;
+        /* 金棕色邊框 */
+        border-radius: 10px;
+        /* 圓角邊框 */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* 淡淡的陰影效果 */
+        text-align: center;
+        /* 文本居中 */
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width:1024px) {
+            margin: 20px;
+        }
+
+        .update-info-title {
+            font-size: 1.8rem;
+            /* 大標題字體大小 */
+            font-weight: bold;
+            color: #5A4636;
+            /* 深棕色文字 */
+            margin-bottom: 10px;
+
+            &:after {
+                content: '';
+                display: block;
+                width: 60px;
+                height: 3px;
+                background: gold;
+                margin: 15px auto;
+            }
+        }
+
+        .update-info-description {
+            font-size: 1rem;
+            color: #8B5E34;
+            /* 較淺的棕色 */
+            margin-bottom: 20px;
+            /* 與內容區的間距 */
+        }
+    }
+
+    .Home-page-3 {
+        padding: 20px;
+        background: linear-gradient(180deg, #FFF7E0 0%, #F0DAAE 100%);
+        border-radius: 15px;
+        margin: 50px auto;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+
+        .guide-videos-title {
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            color: #5A4636;
+            margin-bottom: 10px;
+
+            &:after {
+                content: '';
+                display: block;
+                width: 60px;
+                height: 3px;
+                background: gold;
+                margin: 15px auto;
+            }
+        }
+
+        .guide-videos-description {
+            font-size: 1rem;
+            text-align: center;
+            color: #8B5E34;
+            margin-bottom: 30px;
+        }
+    }
+
+    .Home-page-4 {
+        padding: 40px 0;
+        background: #F0DAAE;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.3);
+            box-shadow: inset 0 0 30px rgba(74, 59, 36, 0.08);
+        }
+
+        .profession-title {
+            position: relative;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #5A4636;
+            font-size: 36px;
+            font-weight: bold;
+
+            &:after {
+                content: '';
+                display: block;
+                width: 60px;
+                height: 3px;
+                background: gold;
+                margin: 15px auto;
+            }
+        }
+    }
+}
+
+//遊戲公告
+#NP-Allpage {
+    .All-page-left {
+        .Top-title {
+            p {
+                &::before {
+                    content: '遊戲公告';
+                    position: absolute;
+                    color: black;
+                    -webkit-text-stroke: 13px black;
+                    z-index: -1;
+                }
+            }
+        }
+
+        .GameNews,
+        .HotNews {
+            margin-top: 15px;
+        }
+
+    }
+}
+
+//公告內容
+#NPC-Allpage {
+    .All-page-left {
+        .Top-title {
+            p {
+                &::before {
+                    content: '遊戲公告';
+                    position: absolute;
+                    color: black;
+                    -webkit-text-stroke: 13px black;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+}
+
+//更新資訊
+#UP-Allpage {
+
+    .All-page-left {
+        .Top-title {
+            p {
+                &::before {
+                    content: '更新資訊';
+                    position: absolute;
+                    color: black;
+                    -webkit-text-stroke: 13px black;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+
+    .GameUpdata {
+        background-color: #FDF5E6;
+        border: 1px solid #8B4513;
+        border-radius: 15px;
+
+        .GameUpdata-bg {
+            margin-left: 50px;
+
+            @media (max-width:1024px) {
+                margin-left: 100px;
+
+            }
+
+            @media (max-width:640px) {
+                margin-left: 50px;
+
+            }
+        }
+    }
+}
+
+//更新資訊內容
+#UPC-Allpage {
+    .All-page-left {
+        .Top-title {
+            p {
+                &::before {
+                    content: '更新資訊';
+                    position: absolute;
+                    color: black;
+                    -webkit-text-stroke: 13px black;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+
+    .GameUpdata {
+        background-color: #FDF5E6;
+        border: 1px solid #8B4513;
+        border-radius: 15px;
+
+        .GameUpdata-bg {
+            margin-left: 50px;
+
+            @media (max-width:1024px) {
+                margin-left: 100px;
+
+            }
+
+            @media (max-width:640px) {
+                margin-left: 50px;
+
+            }
+        }
+    }
+
+}
+
+//攻略頁面
+#SP-Allpage {
+    .All-page-left {
+        .Top-title {
+            p {
+                &::before {
+                    content: '遊戲攻略';
+                    position: absolute;
+                    color: black;
+                    -webkit-text-stroke: 13px black;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+
+    .GameStrategy {
+        background-color: #FDF5E6;
+        border: 1px solid #8B4513;
+        border-radius: 15px;
+        padding-left: 50px;
+
+        @media (max-width:1024px) {
+            padding-left: 50px;
+            margin-bottom: 15px;
+
+        }
+
+        @media (max-width:640px) {
+            padding-left: 0px;
+
+        }
+    }
+
+}
+
+//攻略內容
+#SPC-Allpage {
+    .All-page-left {
+        .Top-title {
+            p {
+                &::before {
+                    content: '遊戲攻略';
+                    position: absolute;
+                    color: black;
+                    -webkit-text-stroke: 13px black;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+
+    .GameStrategy {
+        background-color: #FDF5E6;
+        border: 1px solid #8B4513;
+        border-radius: 15px;
+        padding-left: 50px;
+
+        @media (max-width:1024px) {
+            padding-left: 50px;
+            margin-bottom: 15px;
+
+        }
+
+        @media (max-width:640px) {
+            padding-left: 0px;
+
+        }
+    }
+
+    .ButtonNone {
+        @media (max-width:1024px) {
+            display: none;
+        }
+
+        @media (max-width:640px) {
+            display: none;
+        }
+    }
+
+}
+
+//關於我們
+#AP-Allpage {
+    .All-page-left {
+        .Top-title {
+            p {
+                &::before {
+                    content: '關於網站';
+                    position: absolute;
+                    color: black;
+                    -webkit-text-stroke: 13px black;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+
+    .GameAbout {
+        background-color: #FDF5E6;
+        border: 1px solid #8B4513;
+        border-radius: 15px;
+
+        @media (max-width:1024px) {
+            margin-bottom: 15px;
+
+        }
+
+        @media (max-width:640px) {
+            padding-left: 0px;
+
+        }
+    }
+
+}
