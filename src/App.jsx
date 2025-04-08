@@ -1,6 +1,6 @@
 import { Route, Routes, useLocation } from 'react-router-dom'
 import './App.css'
-import Home from './pages2.0/Home'
+import Home from './pages/Home'
 import NewsPage from './pages/NewsPage'
 import NewsPageContent from './pages/NewsPageContent'
 import StrategyPage from './pages/StrategyPage'

@@ -7,13 +7,15 @@
     #LT-header {
         .LT-Topbar {
             display: flex;
-            justify-content: start;
+            justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
             height: 100%;
+
             @media (max-width:1024px) {
                 display: block;
             }
+
             .LT-title {
                 display: flex;
                 position: relative;
@@ -99,99 +101,103 @@
                     }
                 }
             }
-            .LT-announcement {
-                display: flex;
-                margin-right: 50px;
-                padding: 5px 0;
-                background-color: $color-secondary-1; // 背景色
-                width: 30%;
-                border: 2px solid $color-secondary; // 邊框色
-                border-radius: 5px;
-                overflow: hidden;
 
-                @media (max-width:1024px) {
-                    width: 100%;
-                }
-
-                @media (max-width:640px) {
-                    margin: 15px 0 0 0;
-                }
-
-                .LT-announcement-1 {
-                    display: flex;
-                    align-items: center;
-                    margin: 0 15px;
-
-                    @media (max-width:640px) {
-                        margin: 0 10px;
-                    }
-
-                    p {
-                        font-size: $font-size-xs; // 小字體大小
-                        color: #D35D47; // 錯誤文字顏色
-                        font-weight: bold;
-                        font-size: 14px;
-                        white-space: nowrap;
-                        /* 禁止文字換行 */
-
-                    }
-                }
-
-                .LT-announcement-scroll {
-                    white-space: nowrap;
-                    /* 禁止文字換行 */
-                    overflow: hidden;
-                    /* 超出容器部分隱藏 */
-                    text-overflow: ellipsis;
-                    /* 用省略號表示被截斷的文字 */
-                    height: 25px;
-                    position: relative;
-
-
-                    ul {
-                        list-style: none;
-                        padding: 0;
-                        margin: 0;
-                        transition: transform 0.8s ease-in-out; // 平滑過渡
-                        position: relative;
-
-                        li {
-                            height: 25px;
-                            display: flex;
-                            align-items: center;
-                            justify-content: flex-start;
-                            font-size: 16px;
-                            white-space: nowrap;
-                            /* 禁止文字換行 */
-                            overflow: hidden;
-                            /* 超出容器部分隱藏 */
-                            text-overflow: ellipsis;
-                            /* 用省略號表示被截斷的文字 */
-
-
-                            a {
-                                text-decoration: none;
-                                color: #333;
-                                font-weight: bold;
-
-                                &:hover {
-                                    color: #0078d4;
-                                }
-                            }
-
-                            &.active {
-                                font-weight: bold; // 活動項目加粗
-                                color: #0056b3;
-                            }
-                        }
-                    }
-                }
-
-            }
         }
     }
 }
 
+.LT-announcement {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px 0;
+    background-color: $color-secondary-1; // 背景色
+    width: 450px;
+    margin-left: auto;
+    margin-right: 60px;
+    border: 2px solid $color-secondary; // 邊框色
+    border-radius: 5px;
+    overflow: hidden;
+
+    @media (max-width:1024px) {
+        width: 100%;
+    }
+
+    @media (max-width:640px) {
+        margin: 15px 0 0 0;
+    }
+
+    .LT-announcement-1 {
+        display: flex;
+        align-items: center;
+        margin: 0 15px;
+
+        @media (max-width:640px) {
+            margin: 0 10px;
+        }
+
+        p {
+            font-size: $font-size-xs; // 小字體大小
+            color: #D35D47; // 錯誤文字顏色
+            font-weight: bold;
+            font-size: 14px;
+            white-space: nowrap;
+            /* 禁止文字換行 */
+
+        }
+    }
+
+    .LT-announcement-scroll {
+        white-space: nowrap;
+        /* 禁止文字換行 */
+        overflow: hidden;
+        /* 超出容器部分隱藏 */
+        text-overflow: ellipsis;
+        /* 用省略號表示被截斷的文字 */
+        height: 25px;
+        position: relative;
+
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            transition: transform 0.8s ease-in-out; // 平滑過渡
+            position: relative;
+
+
+            li {
+                height: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                font-size: 16px;
+                white-space: nowrap;
+                /* 禁止文字換行 */
+                overflow: hidden;
+                /* 超出容器部分隱藏 */
+                text-overflow: ellipsis;
+                /* 用省略號表示被截斷的文字 */
+
+
+                a {
+                    text-decoration: none;
+                    color: #333;
+                    font-weight: bold;
+
+                    &:hover {
+                        color: #0078d4;
+                    }
+                }
+
+                &.active {
+                    font-weight: bold; // 活動項目加粗
+                    color: #0056b3;
+                }
+            }
+        }
+    }
+
+}
 
 //漢堡按鈕
 .LT-navbar-humburger {

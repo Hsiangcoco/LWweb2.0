@@ -1,0 +1,51 @@
+@use 'reset';
+@use './variables/'as *;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+
+
+.sidebar {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    width: 240px;
+    height: 100vh;
+    z-index: 1000;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.menu-list li {
+    font-size: 18px;
+    padding: 16px 0;
+    color: #dcd0b8;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.menu-list li:hover {
+    color: #f1e7c5;
+}
+
+.menu-list li.active {
+    color: #fff8d0;
+    position: relative;
+}
+
+.menu-list li.active::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #e5c97a, transparent);
+    transform: translateY(-50%);
+    z-index: -1;
+    filter: blur(6px);
+}
