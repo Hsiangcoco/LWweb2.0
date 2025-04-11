@@ -17,7 +17,7 @@
 
         .LT-footer-titletop {
             p {
-                color: #8B4513;
+                color: #fff8d0;
                 font-size: 1.5rem;
                 font-weight: 700;
                 padding-top: 10px;
@@ -33,7 +33,7 @@
 
                 a {
 
-                    color: #000000;
+                    color: #dcd0b8;
                     font-size: 1.2rem;
 
 
@@ -46,6 +46,7 @@
         position: absolute;
         right: 0px;
         bottom: 0px;
+        color: #dcd0b8;
         @media (max-width:640px) {
             font-size: 0.8rem;
         }

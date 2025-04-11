@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
 
 
-
-body {
-    background-image: url(../images/backimg-2.png);
-    background-color: #f0Daae;
-    background-size: cover;
+body{
+    background-color: #1e1b17;
 }

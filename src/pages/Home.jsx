@@ -14,53 +14,23 @@ export default function Home() {
     return (
         <>
             <div id='Home-Allpage'>
-                {/* <div className='Home-page-menu'>
-                    <ul>
-                        <li>
-                            重點更新
-                        </li>
-                        <li>
-                            本週更新
-                        </li>
-                        <li>
-                            攻略影片
-                        </li>
-                        <li>
-                            職業專區
-                        </li>
-                    </ul>
-                </div> */}
-                <aside class="sidebar">
-                    <ul class="menu-list">
-                        <li>重啟世界：妖魔</li>
-                        <li>妖魔凱膺歸來</li>
-                        <li class="active">妖精重啟</li>
-                        <li>Studio W精華影片</li>
-                        <li>NEXT UPDATE</li>
-                    </ul>
-                </aside>
 
                 <div className='Home-page-1'>
-                    {/* <div className='Topbar'>
-                        <Topbar />
-                    </div> */}
                     <header class="navbar">
                         <div class="navbar-left">
                             <img src="logo.svg" alt="Logo" class="logo" />
-                            <span class="company-name">家島建設株式会社</span>
+                            <span class="company-name">天堂Ｗ攻略聖所</span>
                         </div>
 
                         <nav class="navbar-menu">
-                            <a href="#">私たちについて <span class="arrow">▼</span></a>
-                            <a href="#">会社案内 <span class="arrow">▲</span></a>
-                            <a href="#">事業内容 <span class="arrow">▼</span></a>
-                            <a href="#">作業船紹介</a>
-                            <a href="#">施工実績</a>
-                            <a href="#">採用情報 <span class="arrow">▼</span></a>
+                            <a href="#">遊戲公告</a>
+                            <a href="#">更新資訊</a>
+                            <a href="#">遊戲攻略</a>
+                            <a href="#">關於網站</a>
                         </nav>
 
                         <div class="navbar-right">
-                            <a href="#" class="contact-button">お問い合わせ</a>
+                            <a href="#" class="contact-button">我的頻道</a>
                         </div>
                     </header>
 
@@ -69,29 +39,6 @@ export default function Home() {
                         <UpdateContent />
                     </div>
                 </div>
-
-                {/*  <div className='Home-page-2'>
-                    <div className='Home-page-img'>
-                        <img src="./images/gamenews-img-big.png" alt="" />
-                    </div>
-                    <div className='Home-page-textbox'>
-                        <div className='Home-page-2-title'>
-                            <h2>本週更新</h2>
-                            <div>updata</div>
-                        </div>
-                        <div className='Home-page2-listbox'>
-                            <ul className='Home-page-2-menu'>
-                                <li className='Home-page-2-list'>
-                                    <span>3/26</span>3月第四週更新影片</li>
-                                <li className='Home-page-2-list'><span>3/25</span>3月第四週 CM情報</li>
-                                <li className='Home-page-2-list'><span>3/19</span>3月第三週更新影片</li>
-                                <li className='Home-page-2-list'><span>3/18</span>3月第三週 CM情報</li>
-                            </ul>
-                        </div>
-
-                    </div>
-
-                </div> */}
                 <section class="business-section">
                     <div class="business-image">
                         <img src="./images/gamenews-img-big.png" alt="船舶圖片" />
@@ -108,12 +55,6 @@ export default function Home() {
                     </div>
                 </section>
 
-
-                {/* <div className='Home-page-3'>
-                    <h2 className="guide-videos-title">攻略影片專區</h2>
-                    <p className="guide-videos-description">以下為最新的攻略影片，幫助您輕鬆提升遊戲技巧！</p>
-                    <YoutubeScroll />
-                </div> */}
 
                 <section class="cases-section">
                     <h2 class="cases-title">Video</h2>

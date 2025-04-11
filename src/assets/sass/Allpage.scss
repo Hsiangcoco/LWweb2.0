@@ -34,7 +34,6 @@
         height: 186px;
         object-fit: cover;
         background-size: cover;
-
         background-position: 0px;
 
         @media (max-width:640px) {
@@ -128,10 +127,13 @@
 //個別分頁內容
 //首頁
 #Home-Allpage {
+    background-color: #1e1b17;
+
     .Home-page-1 {
+        margin-top: 80px;
+
         .Home-page-1-Banner {
             display: flex;
-            margin-top: 80px;
 
             @media (max-width:1024px) {
                 margin-top: 10px;
@@ -150,104 +152,76 @@
             top: 0;
             width: 100%;
             height: 72px;
-            background-color: #fff;
+            background-color: #15110e46;
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 0 40px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
             z-index: 1000;
+
             .navbar-left {
                 display: flex;
                 align-items: center;
+
                 .logo {
                     width: 24px;
                     height: 24px;
                     margin-right: 12px;
                 }
+
                 .company-name {
                     font-size: 18px;
                     font-weight: 600;
-                    color: #0c131a;
+                    color: #dcd0b8;
                 }
             }
-        }
 
-        .navbar-menu {
-            display: flex;
-            gap: 24px;
-            align-items: center;
-            a {
-                color: #111;
-                text-decoration: none;
-                font-size: 16px;
-                position: relative;
-                .arrow {
-                    font-size: 12px;
-                    margin-left: 4px;
+            .navbar-menu {
+                display: flex;
+                gap: 24px;
+                align-items: center;
+
+                a {
+                    color: #dcd0b8;
+                    text-decoration: none;
+                    font-size: 16px;
+                    position: relative;
+
+                    .arrow {
+                        font-size: 12px;
+                        margin-left: 4px;
+                    }
                 }
             }
+
+            .navbar-right {
+                display: flex;
+                align-items: center;
+
+                .contact-button {
+                    background-color: #dcd0b8;
+                    color: #000000;
+                    padding: 10px 20px;
+                    border-radius: 999px;
+                    text-decoration: none;
+                    font-size: 16px;
+                    transition: background-color 0.3s;
+                }
+
+                .contact-button:hover {
+                    background-color: #ca8837;
+                    color: #f1e7c5;
+                }
+
+            }
         }
 
-        .navbar-right {
-            display: flex;
-            align-items: center;
-            .contact-button {
-                background-color: #0f1923;
-                color: white;
-                padding: 10px 20px;
-                border-radius: 999px;
-                text-decoration: none;
-                font-size: 16px;
-                transition: background-color 0.3s;
-            }
-    
-            .contact-button:hover {
-                background-color: #1b2a3a;
-            }
-    
-        }
 
-        
+
+
+
     }
-
-    /* .Home-page-2 {
-        margin: 30px 150px;
-        padding: 20px;
-        background-color: #FFF3E6;
-        border: 2px solid #D3A871;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-
-        @media (max-width:1024px) {
-            margin: 20px;
-        }
-
-        .update-info-title {
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: #5A4636;
-            margin-bottom: 10px;
-
-            &:after {
-                content: '';
-                display: block;
-                width: 60px;
-                height: 3px;
-                background: gold;
-                margin: 15px auto;
-            }
-        }
-
-        .update-info-description {
-            font-size: 1rem;
-            color: #8B5E34;
-            margin-bottom: 20px;
-        }
-    } */
 
     .Home-page-2 {
         display: flex;
@@ -310,7 +284,6 @@
 
     .Home-page-3 {
         padding: 20px;
-        background: linear-gradient(180deg, #FFF7E0 0%, #F0DAAE 100%);
         border-radius: 15px;
         margin: 50px auto;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
@@ -320,7 +293,7 @@
             font-size: 2rem;
             font-weight: bold;
             text-align: center;
-            color: #5A4636;
+            color: #f1e7c5;
             margin-bottom: 10px;
 
             &:after {
@@ -336,7 +309,7 @@
         .guide-videos-description {
             font-size: 1rem;
             text-align: center;
-            color: #8B5E34;
+            color: #f1e7c5;
             margin-bottom: 30px;
         }
     }
@@ -346,52 +319,62 @@
         flex-wrap: wrap;
         min-height: 100vh;
         margin-top: 72px;
+
         .business-image {
             flex: 1 1 50%;
+
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
             }
         }
+
         .business-content {
             flex: 1 1 50%;
             padding: 60px 40px;
-            background-color: #fff;
             display: flex;
             flex-direction: column;
             justify-content: center;
+
             .business-title {
                 font-size: 64px;
                 margin: 0;
-                color: #1b1e21;
+                color: #f1e7c5;
             }
+
             .business-subtitle {
                 font-size: 16px;
-                color: #555;
+                color: #f1e7c5;
                 margin-bottom: 40px;
             }
+
             .business-list {
                 list-style: none;
                 padding: 0;
                 margin: 0;
+
                 li {
                     font-size: 20px;
-                    border-top: 1px solid #ddd;
+                    border-top: 1px solid #f1e7c5;
                     padding: 20px 0;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
+                    color: #f1e7c5;
+
                     .arrow {
                         font-size: 20px;
-                        color: #333;
+                        color: #f1e7c5;
                     }
                 }
+
                 li:last-child {
-                    border-bottom: 1px solid #ddd;
+                    border-bottom: 1px solid #f1e7c5;
                 }
+
                 li span:first-child {
-                    color: #999;
+                    color: #f1e7c5;
                     margin-right: 10px;
                     min-width: 40px;
                     display: inline-block;
@@ -408,13 +391,13 @@
         .cases-title {
             font-size: 72px;
             font-weight: bold;
-            color: #b8aea6;
+            color: #f1e7c5;
             margin: 0;
         }
 
         .cases-subtitle {
             font-size: 18px;
-            color: #b8aea6;
+            color: #f1e7c5;
             margin-bottom: 40px;
         }
 
@@ -424,7 +407,7 @@
             gap: 40px;
 
             .case-card {
-                background-color: #131e28;
+                background-color: #2a2a2a;
                 padding: 16px;
                 border-radius: 12px;
                 transition: transform 0.3s ease;
@@ -473,7 +456,6 @@
 
     .Home-page-4 {
         padding: 40px 0;
-        background: #F0DAAE;
         position: relative;
 
         &::before {
@@ -483,7 +465,6 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(255, 255, 255, 0.3);
             box-shadow: inset 0 0 30px rgba(74, 59, 36, 0.08);
         }
 
@@ -491,7 +472,7 @@
             position: relative;
             text-align: center;
             margin-bottom: 40px;
-            color: #5A4636;
+            color: #dcd0b8;
             font-size: 36px;
             font-weight: bold;
 
