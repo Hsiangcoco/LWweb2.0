@@ -16,23 +16,9 @@ export default function Home() {
             <div id='Home-Allpage'>
 
                 <div className='Home-page-1'>
-                    <header class="navbar">
-                        <div class="navbar-left">
-                            <img src="logo.svg" alt="Logo" class="logo" />
-                            <span class="company-name">天堂Ｗ攻略聖所</span>
-                        </div>
-
-                        <nav class="navbar-menu">
-                            <a href="#">遊戲公告</a>
-                            <a href="#">更新資訊</a>
-                            <a href="#">遊戲攻略</a>
-                            <a href="#">關於網站</a>
-                        </nav>
-
-                        <div class="navbar-right">
-                            <a href="#" class="contact-button">我的頻道</a>
-                        </div>
-                    </header>
+                    <div>
+                        <Topbar></Topbar>
+                    </div>
 
                     <div className='Home-page-1-Banner'>
                         <BannerSlider />

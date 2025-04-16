@@ -56,7 +56,33 @@ export default function Topbar() {
 
     return (
         <>
-            <div className="LT-Topbar-page">
+            <header class="navbar">
+                <Link to='/'>
+                    <div class="navbar-left">
+
+
+                        <img src="logo.svg" alt="Logo" class="logo" />
+                        <span class="company-name">天堂Ｗ攻略聖所</span>
+                    </div>
+                </Link>
+
+
+                <nav class="navbar-menu">
+                    <Link to='/News'>遊戲公告</Link>
+                    <Link to='/Update'>更新資訊</Link>
+                    <Link to='/Strategy'>遊戲攻略</Link>
+                    <Link to='/AboutPage'>關於網站</Link>
+                </nav>
+
+                <div class="navbar-right">
+                    <a href="#" class="contact-button">我的頻道</a>
+                </div>
+            </header>
+            <div className="sp">
+
+            </div>
+
+            {/* <div className="LT-Topbar-page">
                 <div id="LT-header">
                     <div className="LT-Topbar">
                         <Link to='/'>
@@ -134,7 +160,7 @@ export default function Topbar() {
 
 
                 </div>
-            </div >
+            </div > */}
         </>
 
     )

@@ -4,7 +4,6 @@
 .GU-content-bg {
     display: flex;
     flex-wrap: wrap;
-
     .GU-news-card {
         margin: 30px;
 
@@ -18,12 +17,13 @@
         }
 
         &.modern {
+
             width: 350px;
             background: white;
             border-radius: 15px;
             overflow: hidden;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
+            transition: transform 0.5s ease;
 
             @media (max-width:1024px) {
                 width: 250px;
@@ -31,6 +31,8 @@
 
             &:hover {
                 transform: translateY(-5px);
+                box-shadow: 0 0 10px rgba(230, 201, 120, 0.4);
+
             }
 
 

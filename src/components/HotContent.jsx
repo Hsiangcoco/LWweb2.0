@@ -6,28 +6,28 @@ export default function HotContent() {
         {
             header: "最新內容",
             items: [
-                { text: "11/29(五) 已知問題公告", link: "/NewsContent" },
-                { text: "特別直播Director's Talk獎勵說明", link: "/NewsContent" },
-                { text: "「藝術家的咒語卡片箱(刻印)」暫時無法使用說明", link: "/NewsContent" },
+                { text: "📜 11/29(五) 已知問題公告", link: "/NewsContent" },
+                { text: "📜 特別直播Director's Talk獎勵說明", link: "/NewsContent" },
+                { text: "📜 「藝術家的咒語卡片箱(刻印)」暫時無法使用說明", link: "/NewsContent" },
             ],
         },
         {
             header: "熱門攻略",
             items: [
-                { text: "職業轉換-修羅轉戰士特輯", link: "/StrategyContent" },
-                { text: "魔眼素質最新攻略", link: "/StrategyContent" },
-                { text: "通行證2600元價值真的要買嗎？", link: "" },
+                { text: "🔥 職業轉換-修羅轉戰士特輯", link: "/StrategyContent" },
+                { text: "🔥 魔眼素質最新攻略", link: "/StrategyContent" },
+                { text: "🔥 通行證2600元價值真的要買嗎？", link: "" },
             ],
         },
         {
             header: "熱門影片",
             items: [
-                { text: "2025年初改版內容搶先看！", link: "https://www.youtube.com/@HsiangCo6666", external: true },
-                { text: "本週更新黑五禮包推薦！", link: "https://www.youtube.com/@HsiangCo6666", external: true },
-                { text: "頂級帳號上線！醜操作搞笑不斷", link: "https://www.youtube.com/@HsiangCo6666", external: true },
-                { text: "再現1%奇蹟！黑五禮包全刷滿", link: "https://www.youtube.com/@HsiangCo6666", external: true },
-                { text: "天堂W繪本美術設定集開箱！", link: "https://www.youtube.com/@HsiangCo6666", external: true },
-                { text: "首次攻略梅塔特隆！新地圖BOSS", link: "https://www.youtube.com/@HsiangCo6666", external: true },
+                { text: "🎬 2025年初改版內容搶先看！", link: "https://www.youtube.com/@HsiangCo6666", external: true },
+                { text: "🎬 本週更新黑五禮包推薦！", link: "https://www.youtube.com/@HsiangCo6666", external: true },
+                { text: "🎬 頂級帳號上線！醜操作搞笑不斷", link: "https://www.youtube.com/@HsiangCo6666", external: true },
+                { text: "🎬 再現1%奇蹟！黑五禮包全刷滿", link: "https://www.youtube.com/@HsiangCo6666", external: true },
+                { text: "🎬 天堂W繪本美術設定集開箱！", link: "https://www.youtube.com/@HsiangCo6666", external: true },
+                { text: "🎬 首次攻略梅塔特隆！新地圖BOSS", link: "https://www.youtube.com/@HsiangCo6666", external: true },
             ],
         },
     ];
