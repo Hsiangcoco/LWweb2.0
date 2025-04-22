@@ -29,7 +29,7 @@
         &.modern {
             width: 350px;
             background: white;
-            border-radius: 15px;
+            border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
@@ -40,6 +40,7 @@
 
             &:hover {
                 transform: translateY(-5px);
+                box-shadow: 0 0 10px rgba(230, 201, 120, 0.4);
 
                 .GS-card-content {
 
@@ -68,10 +69,11 @@
             .GS-card-content {
                 padding: 20px;
 
-                h2{
+                h2 {
                     font-size: 18px;
                     font-weight: 700;
                 }
+
                 h2,
                 p,
                 time {

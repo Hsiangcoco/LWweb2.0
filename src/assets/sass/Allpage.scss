@@ -19,14 +19,11 @@
 .Top-title {
     position: relative;
     z-index: 1;
-    border: 1px solid;
-    border-radius: 15px;
-    background-position: -550px center;
     font-weight: bold;
     font-family: 'noto sans tc', serif;
     overflow: hidden;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 
     img {
         position: relative;
@@ -51,6 +48,7 @@
         color: #FFD96E;
         /* 字間距 */
         letter-spacing: 30px;
+
 
         @media (min-width:1920px) {
             left: 500px;
@@ -491,23 +489,23 @@
 //遊戲公告
 #NP-Allpage {
     .All-page-left {
-        .Top-title {
-            p {
-                &::before {
-                    content: '遊戲公告';
-                    position: absolute;
-                    color: black;
-                    -webkit-text-stroke: 13px black;
-                    z-index: -1;
-                }
-            }
-        }
+
 
         .GameNews,
-        .HotNews {
-            margin-top: 15px;
-        }
+        .HotNews {}
 
+    }
+
+    .Top-title {
+        p {
+            &::before {
+                content: '遊戲公告';
+                position: absolute;
+                color: black;
+                -webkit-text-stroke: 13px black;
+                z-index: -1;
+            }
+        }
     }
 }
 
@@ -531,16 +529,16 @@
 //更新資訊
 #UP-Allpage {
 
-    .All-page-left {
-        .Top-title {
-            p {
-                &::before {
-                    content: '更新資訊';
-                    position: absolute;
-                    color: black;
-                    -webkit-text-stroke: 13px black;
-                    z-index: -1;
-                }
+    .All-page-left {}
+
+    .Top-title {
+        p {
+            &::before {
+                content: '更新資訊';
+                position: absolute;
+                color: black;
+                -webkit-text-stroke: 13px black;
+                z-index: -1;
             }
         }
     }
@@ -608,25 +606,27 @@
 
 //攻略頁面
 #SP-Allpage {
-    .All-page-left {
-        .Top-title {
-            p {
-                &::before {
-                    content: '遊戲攻略';
-                    position: absolute;
-                    color: black;
-                    -webkit-text-stroke: 13px black;
-                    z-index: -1;
-                }
+    .All-page-left {}
+
+    .Top-title {
+        p {
+            &::before {
+                content: '遊戲攻略';
+                position: absolute;
+                color: black;
+                -webkit-text-stroke: 13px black;
+                z-index: -1;
             }
         }
     }
 
     .GameStrategy {
-        background-color: #FDF5E6;
-        border: 1px solid #8B4513;
-        border-radius: 15px;
-        padding-left: 50px;
+        border: 1px solid #a88c59;
+        background: #2b2119;
+        border-radius: 12px;
+        box-shadow: 0 0 20px rgba(168, 140, 89, 0.3);
+
+        padding-left: 25px;
 
         @media (max-width:1024px) {
             padding-left: 50px;
@@ -690,24 +690,25 @@
 
 //關於我們
 #AP-Allpage {
-    .All-page-left {
-        .Top-title {
-            p {
-                &::before {
-                    content: '關於網站';
-                    position: absolute;
-                    color: black;
-                    -webkit-text-stroke: 13px black;
-                    z-index: -1;
-                }
+    .All-page-left {}
+
+    .Top-title {
+        p {
+            &::before {
+                content: '關於網站';
+                position: absolute;
+                color: black;
+                -webkit-text-stroke: 13px black;
+                z-index: -1;
             }
         }
     }
 
     .GameAbout {
-        background-color: #FDF5E6;
-        border: 1px solid #8B4513;
-        border-radius: 15px;
+        border: 1px solid #a88c59;
+        background: #2b2119;
+        border-radius: 12px;
+        box-shadow: 0 0 20px rgba(168, 140, 89, 0.3);
 
         @media (max-width:1024px) {
             margin-bottom: 15px;

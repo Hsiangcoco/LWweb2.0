@@ -34,6 +34,7 @@ export default function GameNews() {
     return (
         <>
             <div class="announcement-list">
+
                 <div class="announcement-item">
                     <div class="icon-area">
                         <img src="./images/gamenews-content-img-1.png" alt="scroll icon" />
@@ -64,9 +65,12 @@ export default function GameNews() {
                     </div>
                 </div>
             </div>
-            {/* <div className="GN-content-bg">
+            {/* <div className="announcement-list">
             {newsList.map((item, index) => (
-                <div className="GN-content-textbox" key={index}>
+                <div className="announcement-item" key={index}>
+                <div class="icon-area">
+                        <img src="./images/gamenews-content-img-1.png" alt="scroll icon" />
+                    </div>
                     <div className="GN-content-textbox-1">
                         <img src="./images/gamenews-content-img-1.png" alt="" />
                         <Link to={item.link}>

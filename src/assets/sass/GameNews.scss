@@ -98,12 +98,14 @@
 }
 
 .announcement-list {
+    border: 1px solid #a88c59;
     background: #2b2119;
     border-radius: 12px;
     padding: 24px;
     width: 100%;
     max-width: 880px;
     box-shadow: 0 0 20px rgba(168, 140, 89, 0.3);
+    
     .announcement-item {
         display: flex;
         align-items: center;
@@ -113,6 +115,12 @@
         background: linear-gradient(to right, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
         border: 1px solid rgba(168, 140, 89, 0.3);
         transition: all 0.3s ease;
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 10px rgba(230, 201, 120, 0.4);
+            background: rgba(255, 255, 255, 0.05);
+        }
+        
         .icon-area {
             flex-shrink: 0;
             width: 40px;
@@ -124,13 +132,13 @@
             justify-content: center;
             align-items: center;
         }
-    }
-    :hover {
-        transform: translateY(-3px);
-        box-shadow: 0 0 10px rgba(230, 201, 120, 0.4);
-        background: rgba(255, 255, 255, 0.05);
-    }
+        
+    } 
+    
 }
+
+
+
 
 .content-area .title {
     font-size: 16px;

@@ -15,14 +15,15 @@ export default function AboutPage() {
                 <div id="All-page-topbar">
                     <Topbar />
                 </div>
-                <div id="All-page-mix">
-                    <div className="All-page-left">
-                        <Link to='/AboutPage'>
+                <Link to='/AboutPage'>
                             <div className="Top-title">
                                 <img src="./images/gamenews-img-1.png" alt="" />
                                 <p>關於網站</p>
                             </div>
                         </Link>
+                <div id="All-page-mix">
+                    <div className="All-page-left">
+                        
                         <div className="GameAbout">
                             <About></About>
 
