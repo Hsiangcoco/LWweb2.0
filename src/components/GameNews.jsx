@@ -5,14 +5,14 @@ import { useState } from 'react';
 export default function GameNews() {
     // 最新資料
     const [newsList, setNewsList] = useState([
-        { title: "[說明] 1/8(三) 「白金通行證(21日)」商品說明(骷髏世界除外)(更新)", link: "/NewsContent", date: "2025/01/07" },
-        { title: "[說明] 1/8(三) 「黑色通行證(21日)」商品說明(骷髏世界除外)(更新)", link: "/NewsContent", date: "2025/01/07" },
-        { title: "[說明] 1/8(三) 「白金通行證(21日)」商品說明(骷髏世界除外)(更新)", link: "/NewsContent", date: "2025/01/07" },
-        { title: "[說明] 1/8(三) 「甘特閃耀箱」商品說明(骷髏世界專用)", link: "/NewsContent", date: "2025/01/07" },
-        { title: "[說明] 1/8(三) 「靈魂石破片補給箱」商品說明(骷髏世界專用)", link: "/NewsContent", date: "2025/01/07" },
-        { title: "[說明] 1/8(三) 每日商品說明(3種)(骷髏世界專用)", link: "/NewsContent", date: "2025/01/07" },
-        { title: "[說明] 1/8(三) 「每日簽到：每日萬能藥」商品說明(骷髏世界專用)", link: "/NewsContent", date: "2025/01/07" },
-        { title: "[說明] 1/8(三) 骷髏世界專用商品說明", link: "/NewsContent", date: "2025/01/07" },
+        { title: "[說明] 1/8(三) 「白金通行證(21日)」商品說明(骷髏世界除外)(更新)", link: "/NewsContent", date: "天堂W攻略聖所 ｜ 2025/01/07" },
+        { title: "[說明] 1/8(三) 「黑色通行證(21日)」商品說明(骷髏世界除外)(更新)", link: "/NewsContent", date: "天堂W攻略聖所 ｜ 2025/01/07" },
+        { title: "[說明] 1/8(三) 「白金通行證(21日)」商品說明(骷髏世界除外)(更新)", link: "/NewsContent", date: "天堂W攻略聖所 ｜ 2025/01/07" },
+        { title: "[說明] 1/8(三) 「甘特閃耀箱」商品說明(骷髏世界專用)", link: "/NewsContent", date: "天堂W攻略聖所 ｜ 天堂W攻略聖所 ｜ 2025/01/07" },
+        { title: "[說明] 1/8(三) 「靈魂石破片補給箱」商品說明(骷髏世界專用)", link: "/NewsContent", date: "天堂W攻略聖所 ｜ 2025/01/07" },
+        { title: "[說明] 1/8(三) 每日商品說明(3種)(骷髏世界專用)", link: "/NewsContent", date: "天堂W攻略聖所 ｜ 2025/01/07" },
+        { title: "[說明] 1/8(三) 「每日簽到：每日萬能藥」商品說明(骷髏世界專用)", link: "/NewsContent", date: "天堂W攻略聖所 ｜ 2025/01/07" },
+        { title: "[說明] 1/8(三) 骷髏世界專用商品說明", link: "/NewsContent", date: "天堂W攻略聖所 ｜ 2025/01/07" },
     ]);
 
     // 舊資料
@@ -34,7 +34,6 @@ export default function GameNews() {
     return (
         <>
             <div class="announcement-list">
-
                 <div class="announcement-item">
                     <div class="icon-area">
                         <img src="./images/gamenews-content-img-1.png" alt="scroll icon" />
@@ -72,7 +71,6 @@ export default function GameNews() {
                         <img src="./images/gamenews-content-img-1.png" alt="scroll icon" />
                     </div>
                     <div className="GN-content-textbox-1">
-                        <img src="./images/gamenews-content-img-1.png" alt="" />
                         <Link to={item.link}>
                             <p>{item.title}</p>
                         </Link>
