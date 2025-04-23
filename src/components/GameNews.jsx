@@ -33,7 +33,7 @@ export default function GameNews() {
 
     return (
         <>
-            <div class="announcement-list">
+            {/* <div class="announcement-list">
                 <div class="announcement-item">
                     <div class="icon-area">
                         <img src="./images/gamenews-content-img-1.png" alt="scroll icon" />
@@ -63,32 +63,32 @@ export default function GameNews() {
                         <div class="meta">天堂W攻略聖所 ｜ 2025/01/07</div>
                     </div>
                 </div>
+            </div> */}
+
+            <div className="announcement-list">
+                {newsList.map((item, index) => (
+                    <Link to={item.link}>
+
+                        <div className="announcement-item" key={index}>
+                            <div class="icon-area">
+                                <img src="./images/gamenews-content-img-1.png" alt="scroll icon" />
+                            </div>
+                            <div className="content-area">
+                                <div class="title">{item.title}</div>
+                                <div class="meta">{item.date} </div>
+                            </div>
+                        </div>
+                    </Link>
+
+                ))}
+                {oldNews.length > 0 ? (
+                    <button className="load-more-btn" onClick={loadMore}>
+                        查看更多
+                    </button>
+                ) : (
+                    <p className="no-more-data">沒有更多資料了</p>
+                )}
             </div>
-            {/* <div className="announcement-list">
-            {newsList.map((item, index) => (
-                <div className="announcement-item" key={index}>
-                <div class="icon-area">
-                        <img src="./images/gamenews-content-img-1.png" alt="scroll icon" />
-                    </div>
-                    <div className="GN-content-textbox-1">
-                        <Link to={item.link}>
-                            <p>{item.title}</p>
-                        </Link>
-                    </div>
-                    <div className="GN-content-text-1">
-                        <p>天堂Ｗ攻略聖所</p>
-                        <p>{item.date}</p>
-                    </div>
-                </div>
-            ))}
-            {oldNews.length > 0 ? (
-                <button className="load-more-btn" onClick={loadMore}>
-                    查看更多
-                </button>
-            ) : (
-                <p className="no-more-data">沒有更多資料了</p>
-            )}
-        </div> */}
         </>
     );
 }

@@ -151,3 +151,36 @@
     font-size: 13px;
     color: #c8b78c;
 }
+
+.load-more-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 16px;
+    background-color: rgba(121, 59, 23, 0.56);
+    border: none;
+    border-radius: 8px;
+    color: #f8f1dc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+.load-more-btn:hover {
+    background-color: rgba(202, 100, 41, 0.857);
+}
+
+.hidden {
+    display: none;
+}
+
+.no-more-data {
+    width: 100%;
+    padding: 12px;
+    margin-top: 16px;
+    background-color: rgba(120, 53, 15, 0.1);
+    border: none;
+    border-radius: 8px;
+    color: #f8f1dc;
+    text-align: center;
+
+}

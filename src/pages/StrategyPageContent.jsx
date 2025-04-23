@@ -15,14 +15,15 @@ export default function StrategyPageContent() {
                 <div id="All-page-topbar">
                     <Topbar />
                 </div>
-                <div id="All-page-mix">
-                    <div className="All-page-left">
-                        <Link to='/Strategy'>
+                <Link to='/Strategy'>
                             <div className="Top-title">
                                 <img src="./images/gamenews-img-1.png" alt="" />
                                 <p>遊戲攻略</p>
                             </div>
                         </Link>
+                <div id="All-page-mix">
+                    <div className="All-page-left">
+                        
                         <div className="GameStrategy">
                             <StrategyContent></StrategyContent>
                         </div>

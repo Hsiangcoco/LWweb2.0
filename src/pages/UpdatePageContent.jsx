@@ -19,17 +19,14 @@ export default function UpdatePageContent() {
                 <div id="All-page-topbar">
                     <Topbar />
                 </div>
+                <Link to='/Update'>
+                    <div className="Top-title">
+                        <img src="./images/gamenews-img-1.png" alt="" />
+                        <p>更新資訊</p>
+                    </div>
+                </Link>
                 <div id="All-page-mix">
                     <div className="All-page-left">
-                        <Link to='/Update'>
-                            <div className="Top-title">
-                                <img src="./images/gamenews-img-1.png" alt="" />
-                                <p>更新資訊</p>
-                            </div>
-                        </Link>
-                        <div className="HotNews">
-                            <HotNews />
-                        </div>
                         <div className="GameUpdata">
                             <UpdataCm />
                         </div>

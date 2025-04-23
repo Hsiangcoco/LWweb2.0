@@ -17,14 +17,15 @@ export default function NewsPageContent() {
                 <div id="All-page-topbar">
                     <Topbar />
                 </div>
+                <Link to='/News'>
+                    <div className="Top-title">
+                        <img src="./images/gamenews-img-1.png" alt="" />
+                        <p>遊戲公告</p>
+                    </div>
+                </Link>
                 <div id="All-page-mix">
                     <div className="All-page-left">
-                        <Link to='/News'>
-                            <div className="Top-title">
-                                <img src="./images/gamenews-img-1.png" alt="" />
-                                <p>遊戲公告</p>
-                            </div>
-                        </Link>
+
                         <div className="GameNews">
                             <NewsContent />
                         </div>

@@ -511,16 +511,14 @@
 
 //公告內容
 #NPC-Allpage {
-    .All-page-left {
-        .Top-title {
-            p {
-                &::before {
-                    content: '遊戲公告';
-                    position: absolute;
-                    color: black;
-                    -webkit-text-stroke: 13px black;
-                    z-index: -1;
-                }
+    .Top-title {
+        p {
+            &::before {
+                content: '遊戲公告';
+                position: absolute;
+                color: black;
+                -webkit-text-stroke: 13px black;
+                z-index: -1;
             }
         }
     }
@@ -568,16 +566,14 @@
 
 //更新資訊內容
 #UPC-Allpage {
-    .All-page-left {
-        .Top-title {
-            p {
-                &::before {
-                    content: '更新資訊';
-                    position: absolute;
-                    color: black;
-                    -webkit-text-stroke: 13px black;
-                    z-index: -1;
-                }
+    .Top-title {
+        p {
+            &::before {
+                content: '更新資訊';
+                position: absolute;
+                color: black;
+                -webkit-text-stroke: 13px black;
+                z-index: -1;
             }
         }
     }
@@ -644,16 +640,14 @@
 
 //攻略內容
 #SPC-Allpage {
-    .All-page-left {
-        .Top-title {
-            p {
-                &::before {
-                    content: '遊戲攻略';
-                    position: absolute;
-                    color: black;
-                    -webkit-text-stroke: 13px black;
-                    z-index: -1;
-                }
+    .Top-title {
+        p {
+            &::before {
+                content: '遊戲攻略';
+                position: absolute;
+                color: black;
+                -webkit-text-stroke: 13px black;
+                z-index: -1;
             }
         }
     }

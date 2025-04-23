@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import '../assets/sass/GameStrategy.scss';
+import { useState } from 'react';
 
 export default function GameStrategy() {
     const memoryCards = [
@@ -75,7 +76,46 @@ export default function GameStrategy() {
             subtitle: "要怎麼玩才能賺得多呢？",
             date: "2024-11-12",
         },
+        {
+            imgSrc: "./images/youtubevideoimg3.svg",
+            altText: "Memory of Lineage",
+            link: "/StrategyContent",
+            title: "陣營站玩法攻略",
+            subtitle: "要怎麼玩才能賺得多呢？",
+            date: "2024-11-12",
+        },
+        {
+            imgSrc: "./images/youtubevideoimg3.svg",
+            altText: "Memory of Lineage",
+            link: "/StrategyContent",
+            title: "陣營站玩法攻略",
+            subtitle: "要怎麼玩才能賺得多呢？",
+            date: "2024-11-12",
+        },
+        {
+            imgSrc: "./images/youtubevideoimg3.svg",
+            altText: "Memory of Lineage",
+            link: "/StrategyContent",
+            title: "陣營站玩法攻略",
+            subtitle: "要怎麼玩才能賺得多呢？",
+            date: "2024-11-12",
+        },
+        {
+            imgSrc: "./images/youtubevideoimg3.svg",
+            altText: "Memory of Lineage",
+            link: "/StrategyContent",
+            title: "陣營站玩法攻略",
+            subtitle: "要怎麼玩才能賺得多呢？",
+            date: "2024-11-12",
+        },
     ];
+
+
+    const [showCount, setShowCount] = useState(8);
+
+    const handleToggleShowMore = () => {
+        setShowCount(prev => (prev === 8 ? memoryCards.length : 8));
+    };
 
     return (
         <div className="GS-content-bg">
@@ -93,6 +133,13 @@ export default function GameStrategy() {
                     </Link>
                 </div>
             ))}
+            {memoryCards.length > 8 && (
+                <div className="GS-load-more">
+                    <button onClick={handleToggleShowMore}>
+                        {showCount === 8 ? '查看更多' : '收起'}
+                    </button>
+                </div>
+            )}
         </div>
     );
 }

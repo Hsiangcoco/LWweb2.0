@@ -23,10 +23,6 @@ export default function StrategyPage() {
                 </Link>
                 <div id="All-page-mix">
                     <div className="All-page-left">
-
-                        {/*  <div className="HotNews">
-                            <HotNews />
-                        </div> */}
                         <div className="GameStrategy">
                             <GameStrategy></GameStrategy>
                         </div>
