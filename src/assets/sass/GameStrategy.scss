@@ -93,3 +93,18 @@
     }
 
 }
+.GS-load-more-1{
+    width: 100%;
+    padding: 12px;
+    margin: 20px 0px;
+    background-color: rgba(121, 59, 23, 0.56);
+    border: none;
+    border-radius: 8px;
+    color: #f8f1dc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    &:hover {
+        background-color: rgba(202, 100, 41, 0.857);
+    }
+}

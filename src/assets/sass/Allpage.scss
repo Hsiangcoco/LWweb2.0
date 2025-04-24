@@ -547,9 +547,10 @@
         border-radius: 15px;
         background: #2b2119;
         box-shadow: 0 0 20px rgba(168, 140, 89, 0.3);
+        padding: 25px;
 
         .GameUpdata-bg {
-            margin-left: 50px;
+
 
             @media (max-width:1024px) {
                 margin-left: 100px;
@@ -602,7 +603,9 @@
 
 //攻略頁面
 #SP-Allpage {
-    .All-page-left {}
+    .All-page-left {
+
+    }
 
     .Top-title {
         p {
@@ -621,8 +624,7 @@
         background: #2b2119;
         border-radius: 12px;
         box-shadow: 0 0 20px rgba(168, 140, 89, 0.3);
-
-        padding-left: 25px;
+        padding: 25px;
 
         @media (max-width:1024px) {
             padding-left: 50px;

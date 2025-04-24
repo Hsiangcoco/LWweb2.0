@@ -118,28 +118,36 @@ export default function GameStrategy() {
     };
 
     return (
-        <div className="GS-content-bg">
-            {memoryCards.map((card, index) => (
-                <div className="GS-memory-card modern" key={index}>
-                    <Link to={card.link}>
-                        <div className="GS-card-image">
-                            <img src={card.imgSrc} alt={card.altText} />
-                        </div>
-                        <div className="GS-card-content">
-                            <h2 className="GS-card-title">{card.title}</h2>
-                            <p className="GS-card-subtitle">{card.subtitle}</p>
-                            <time className="GS-card-date">{card.date}</time>
-                        </div>
-                    </Link>
-                </div>
-            ))}
-            {memoryCards.length > 8 && (
+        <>
+            <div className="GS-content-bg">
+                {memoryCards.slice(0, showCount).map((card, index) => (
+                    <div className="GS-memory-card modern" key={index}>
+                        <Link to={card.link}>
+                            <div className="GS-card-image">
+                                <img src={card.imgSrc} alt={card.altText} />
+                            </div>
+                            <div className="GS-card-content">
+                                <h2 className="GS-card-title">{card.title}</h2>
+                                <p className="GS-card-subtitle">{card.subtitle}</p>
+                                <time className="GS-card-date">{card.date}</time>
+                            </div>
+                        </Link>
+                    </div>
+                ))}
+                {/* {memoryCards.length > 8 && (
                 <div className="GS-load-more">
                     <button onClick={handleToggleShowMore}>
                         {showCount === 8 ? '查看更多' : '收起'}
                     </button>
                 </div>
-            )}
-        </div>
+            )} */}
+
+            </div>
+            <div className="GS-load-more">
+                <button className='GS-load-more-1' onClick={handleToggleShowMore}>
+                    {showCount === 8 ? '查看更多' : '收起'}
+                </button>
+            </div>
+        </>
     );
 }
